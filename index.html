@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Numbers</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="/scripts.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./assets/logo.svg" alt="Logo">
+            <h1>NUMBERS</h1>
+        </header>
+
+
+        <div id="app">
+
+            <div id="title">
+                <p id="gradient-p">ONLINE - GRATUITO</p>
+                <h2>SORTEADOR<br /> DE NÚMEROS</h2>
+            </div>
+
+
+            <section class="faq">
+                <aside class="info">
+                    <img src="/assets/user-info.svg" alt="user-info">
+                    <div class="wrapper">
+                        <p><span>Como funciona o sorteador de números?</span></p>
+                        <p>O sorteador utiliza um algoritmo de geração <br /> aleatória para criar números dentro do
+                            intervalo especificado pelo usuário.</p>
+                    </div>
+                </aside>
+
+                <aside class="info">
+                    <img src="/assets/user-info.svg" alt="user-info">
+                    <div class="wrapper">
+                        <p><span>Posso escolher o intervalo dos números?</span></p>
+                        <p>Sim, você pode definir os valores mínimo e máximo <br /> para o intervalo dos números
+                            sorteados.</p>
+                    </div>
+                </aside>
+
+            </section>
+
+            <section class="number-sort">
+
+                <div class="section-result" id="hide">
+                    <h3>RESULTADO DO SORTEIO</h3>
+                    <p>1° RESULTADO</p>
+
+                    <div class="result-numbers">
+                       
+                    </div>
+
+                    <button class="sort-again">
+                        SORTEAR NOVAMENTE
+                        <img src="/assets/replay.svg" alt="sort-again-button">
+                    </button>
+                </div>
+
+                <div class="section-numbers">
+                    <h3>QUERO SORTEAR:</h3>
+                    <p>Defina o intervalo e a quantidade de números,<br /> clique em "Sortear" e veja os resultados na
+                        tela.
+                        É <br /> rápido e fácil!</p>
+
+                    <div class="numbers">
+                        <label for="quantity-numbers">
+                            NÚMEROS
+                            <input type="number" id="quantity-numbers" autocomplete="off">
+
+                        </label>
+
+                        <label for="min-number">
+                            DE
+                            <input type="number" id="min-number" autocomplete="off">
+                        </label>
+
+                        <label for="max-number">
+                            Á
+                            <input type="number" id="max-number" autocomplete="off">
+                        </label>
+                    </div>
+
+                    <div class="sort-btns">
+                        <label for="repeat">
+                            <input type="checkbox" id="repeat" class="toggle" checked>
+                            Não repetir números
+                        </label>
+
+                        <button class="sort">
+                            SORTEAR
+                            <img class="arrow-right" src="/assets/arrow.svg" alt="arrow-right">
+                        </button>
+                    </div>
+                </div>
+
+
+        </div>
+        </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
